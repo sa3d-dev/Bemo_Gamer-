@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(black, #2e0505,darkred,red);
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(45deg, chartreuse, #007bff, #6610f2, cyan);
+    color: white;
+    padding: 20px;
+}
+header:hover{
+    background: linear-gradient(45deg, #005fff, #14275a, #000000);
+    color: white;
+}
+h1 {
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: linear-gradient(#007eae, #000e80);
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: 0.5s;
+    color: white;
+}
+section:hover{
+    background: #4ff3e0;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 1 1 15px rgba(1,1,1,1.1) ;
+    transition: 0.5s;
+}
+
+h2 {
+    color: #000000;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+button{
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+button:hover{
+    color: red;
+    font-size: 40px;
+    padding: 6px 10px;
+    border-radius: 15px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+.icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.icon span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.icon:hover span {
+    background-color: var(--hover-color);
+}
+
+/* ألوان مخصصة لكل أيقونة */
+.instagram { --hover-color: rgba(38, 0, 97, 0.79); border: 2px solid rgba(181, 0, 255, 0.82); }
+.linkedin { --hover-color: #0077B5; border: 2px solid #0077B5; }
+.youtube { --hover-color: #37ca0c; border: 2px solid #37ff00; transition: 0.5s }
+.twitter { --hover-color: #1DA1F2; border: 2px solid #1DA1F2; transition: 0.5s }
+div a span{
+    color: black;
+}
